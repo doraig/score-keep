@@ -5,11 +5,6 @@ import React from 'react'
 import Player from './Player';
 import FlipMove from 'react-flip-move'
 
-const renderPlayers =  (playersList) => {
-    return playersList.map((player) => {
-        return <Player key={player._id} player={player}/>;
-    });
-};
 
 export default  class PlayerList extends React.Component {
     renderPlayers() {
@@ -40,4 +35,4 @@ export default  class PlayerList extends React.Component {
 
 PlayerList.propTypes ={
     players: React.PropTypes.array.isRequired
-}
+};
